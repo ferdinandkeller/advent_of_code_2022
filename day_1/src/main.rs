@@ -4,7 +4,7 @@ use std::fs;
 /// 
 /// # Fields
 /// 
-/// * `elf` - The index of the elf (it starts at 1).
+/// * `elf` - The index of the elf the data is about. The index starts at 1.
 /// * `calories` - The number of calories the elf is carrying.
 #[derive(Debug, Clone, Copy)]
 struct ElfCalories {
