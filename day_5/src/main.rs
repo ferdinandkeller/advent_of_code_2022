@@ -1,7 +1,7 @@
 use std::fs;
 use regex::Regex;
 
-// The goal of this challenge is to find the state of the stacks after the instructions have been executed.
+/// The goal of this challenge is to find the state of the stacks after the instructions have been executed.
 fn main() {
     // read the input file
     let input = fs::read_to_string("inputs/day_5.txt").expect("Unable to read the input file");
