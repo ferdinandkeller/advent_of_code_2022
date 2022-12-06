@@ -7,9 +7,15 @@ fn main() {
     let input = fs::read_to_string("inputs/day_6.txt").expect("Unable to read the input file");
 
     // compute the answer to the first part
-    println!("The answer to the first part is {}", find_first_start_of_packet(input.clone(), 4));
+    println!(
+        "The start-of-packet instruction is detected after {} characters when using a window of size 4.",
+        find_first_start_of_packet(input.clone(), 4)
+    );
     // compute the answer to the second part
-    println!("The answer to the first part is {}", find_first_start_of_packet(input.clone(), 14));
+    println!(
+        "The start-of-packet instruction is detected after {} characters when using a window of size 14.",
+        find_first_start_of_packet(input.clone(), 14)
+    );
 }
 
 /// Finds the index of the first character after a `start-of-packet` instruction.
