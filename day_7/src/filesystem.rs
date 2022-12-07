@@ -10,6 +10,11 @@ use crate::instruction::Instruction;
 
 /// Represents the filesystem.
 /// Holds all the folders, as well as their content
+/// 
+/// # Fields
+/// 
+/// * `root_directory`: The root directory of the filesystem.
+/// * `current_directory`: The current directory of the filesystem. It's the directory where files and directories are created.
 pub struct FileSystem {
     root_directory: Rc<RefCell<Directory>>,
     current_directory: Rc<RefCell<Directory>>,
