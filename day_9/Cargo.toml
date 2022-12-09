@@ -1,0 +1,8 @@
+[package]
+name = "day_9"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.7"
+thousands = "0.2"
