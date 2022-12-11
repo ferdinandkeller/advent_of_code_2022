@@ -1,5 +1,5 @@
-use std::fs;
-use std::str::FromStr;
+use std::{fs, str::FromStr};
+use thousands::Separable;
 
 /// Represents the hand a player is showing.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -151,7 +151,13 @@ fn main() {
     }
 
     // display the final score
-    println!("By following the strategy guide, you will score :)");
-    println!("{score_method_1} points using the first method.");
-    println!("{score_method_2} points using the second method.");
+    println!("By following the strategy guide, you will score:");
+    println!(
+        "{score_method_1} points using the first method.", 
+        score_method_1 = score_method_1.separate_with_commas()
+    );
+    println!(
+        "{score_method_2} points using the second method.",
+        score_method_2 = score_method_2.separate_with_commas()
+    );
 }
