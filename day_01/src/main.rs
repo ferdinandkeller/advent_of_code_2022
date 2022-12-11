@@ -15,7 +15,7 @@ struct ElfCalories {
 /// Our goal is to find which elves are carrying the most calories.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_1.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_01.txt").expect("Unable to read the input file");
 
     // create a vector of ElfCalories to store the parsed data
     let mut elves_calories = Vec::new();

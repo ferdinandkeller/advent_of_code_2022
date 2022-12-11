@@ -71,7 +71,7 @@ fn item_to_priority(item: char) -> usize {
 /// The goal of this challenge is to find the items that are in multiple compartments or rucksacks.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_3.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_03.txt").expect("Unable to read the input file");
 
     // create a variable to store the sum of the priorities of the items
     let mut sum_of_priorities_1 = 0;

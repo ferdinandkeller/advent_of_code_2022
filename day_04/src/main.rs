@@ -4,7 +4,7 @@ use std::ops::RangeInclusive;
 /// The goal of this challenge is to find how many sections of the elfs' sections are contained in the other elfs' sections and how many are overlapping.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_4.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_04.txt").expect("Unable to read the input file");
 
     // create a variable to count how many sections are contained in the other elf's sections
     let mut contained_count: usize = 0;

@@ -4,7 +4,7 @@ use std::{fs, collections::HashMap};
 /// A `start-of-packet` instruction is a sequence of n different characters.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_6.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_06.txt").expect("Unable to read the input file");
 
     // compute the answer to the first part
     println!(

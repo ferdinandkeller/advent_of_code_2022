@@ -171,7 +171,7 @@ fn update_visibility(forest: &mut Vec<Vec<Tree>>) {
 /// The goal of this challenge is to find the number of visible trees and the highest scenic score in a given forest.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_8.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_08.txt").expect("Unable to read the input file");
 
     // parse the input into a forest of trees
     let mut forest = parse_input(&input);

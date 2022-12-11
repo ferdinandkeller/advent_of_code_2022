@@ -12,7 +12,7 @@ use thousands::Separable;
 /// The goal of this challenge is basically to create a filesystem.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_7.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_07.txt").expect("Unable to read the input file");
 
     // parse the input into a vector of instructions
     let instructions = parse_instructions(&input).unwrap();

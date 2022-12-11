@@ -4,7 +4,7 @@ use regex::Regex;
 /// The goal of this challenge is to find the state of the stacks after the instructions have been executed.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_5.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_05.txt").expect("Unable to read the input file");
 
     // split the input into two parts: the representation of the stacks and the instructions
     let split: Vec<&str> = input.split("\n\n").collect();

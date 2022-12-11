@@ -101,7 +101,7 @@ impl FromStr for RoundResult {
 /// Our goal is to compute how many points we would make using the given strategy.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_2.txt").expect("Unable to read the input file");
+    let input = fs::read_to_string("inputs/day_02.txt").expect("Unable to read the input file");
 
     // create a variable to store the result of the tournament depending on the method used
     let mut score_method_1 = 0;

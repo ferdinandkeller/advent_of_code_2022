@@ -186,7 +186,7 @@ fn parse_instructions(input: &str) -> Vec<Instruction> {
 /// The goal of this challenge is to find the number of locations the tail of the rope has visited.
 fn main() {
     // read the input file
-    let input = fs::read_to_string("inputs/day_9.txt").expect("Unable to read the input file.");
+    let input = fs::read_to_string("inputs/day_09.txt").expect("Unable to read the input file.");
 
     // parse the instructions
     let instructions = parse_instructions(&input);
