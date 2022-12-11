@@ -1,4 +1,5 @@
 use std::fs;
+use thousands::Separable;
 
 /// A struct to store how many calories an elf is carrying.
 /// 
@@ -47,7 +48,7 @@ fn main() {
     println!(
         "The {first}th elf has the most calories: {first_elf_calories}",
         first = first_elf.elf,
-        first_elf_calories = first_elf.calories
+        first_elf_calories = first_elf.calories.separate_with_commas()
     );
 
     // display the total of top three elves
@@ -56,6 +57,6 @@ fn main() {
         first = first_elf.elf,
         second = second_elf.elf,
         third = third_elf.elf,
-        total = first_elf.calories + second_elf.calories + third_elf.calories
+        total = (first_elf.calories + second_elf.calories + third_elf.calories).separate_with_commas()
     )
 }
