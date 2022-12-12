@@ -1,7 +1,7 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::HashMap;
-use std::fmt::{Display, Formatter, format};
+use std::fmt::{Display, Formatter};
 use thousands::Separable;
 use crate::file::File;
 
