@@ -193,8 +193,8 @@ fn main() {
     }
 
     // create the two divider packets
-    let packet_two = Packet::List(vec![Packet::List(vec![Packet::Number(2)])]);
-    let packet_six = Packet::List(vec![Packet::List(vec![Packet::Number(6)])]);
+    let packet_two = Packet::Number(2).wrap().wrap();
+    let packet_six = Packet::Number(6).wrap().wrap();
 
     // add the divider packets to the vector of packets
     packets.push(packet_two.clone());
