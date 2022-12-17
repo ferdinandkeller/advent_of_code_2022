@@ -1,0 +1,10 @@
+[package]
+name = "day_15"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.7"
+thousands = "0.2"
+anyhow = "1.0"
+z3 = { version = "0.11", features = ["static-link-z3"] }
